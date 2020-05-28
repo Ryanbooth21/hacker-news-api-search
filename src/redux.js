@@ -5,7 +5,7 @@ export const search = payload => ({
   payload,
 });
 
-export const reducer = (state = { count: 0 }, action) => {
+export const reducer = (state = { searchTerms: []}, action) => {
   switch (action.type) {
     case 'SEARCH':
       return {
