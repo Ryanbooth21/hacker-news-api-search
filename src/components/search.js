@@ -21,7 +21,7 @@ class Search extends Component {
     };
 
     const submitSearch = () => {
-      axios.get(`http://hn.algolia.com/api/v1/search?query=${this.state.results}&tags=story`)
+      axios.get(`https://hn.algolia.com/api/v1/search?query=${this.state.results}&tags=story`)
         .then((res) => {
           this.setState({
             hits: res.data.hits,
